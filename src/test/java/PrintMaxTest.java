@@ -44,11 +44,11 @@ public class PrintMaxTest {
         Assert.assertEquals((Float) 26.1256f, maxNumber);
     }
 
-    //test case 2.2 prints max Float when max Float is at second position
+    //test case 2.2 prints max Float when max Float is at Second position
     @Test
     public void whenMaxFloatIsSecondArgument_ShouldReturnSecondArgument() {
-        Float maxNumber = printMax.printMaxFloat(26.1256f, 26.35268f, 26.324896f);
-        Assert.assertEquals((Float) 26.35268f, maxNumber);
+        Float maxNumber = printMax.printMaxFloat(26.1256f, 26.05268f, 26.124896f);
+        Assert.assertEquals((Float) 26.1256f, maxNumber);
     }
 
     //test case 2.3 prints max Float when max Float is at third position
@@ -56,5 +56,26 @@ public class PrintMaxTest {
     public void whenMaxFloatIsThirdArgument_ShouldReturnThirdArgument() {
         Float maxNumber = printMax.printMaxFloat(26.1256f, 26.35268f, 26.374896f);
         Assert.assertEquals((Float) 26.374896f, maxNumber);
+    }
+
+    //test case 3.1 prints max String when max String is at first position
+    @Test
+    public void whenMaxStringIsFirstArgument_ShouldReturnFirstArgument() {
+        String maxString = printMax.printMaxString("yddhdhdassa", "gudbdbdn", "assas");
+        Assert.assertEquals((String) "yddhdhdassa", maxString);
+    }
+
+    //test case 3.2 prints max String when max String is at Second position
+    @Test
+    public void whenMaxStringIsSecondArgument_ShouldReturnSecondArgument() {
+        String maxString = printMax.printMaxString("aodlsdj", "bdhjdjhj", "ahhdhd");
+        Assert.assertEquals((String) "bdhjdjhj", maxString);
+    }
+
+    //test case 3.3 prints max String when max String is at third position
+    @Test
+    public void whenMaxStringIsThirdArgument_ShouldReturnThirdArgument() {
+        String maxString = printMax.printMaxString("ahghddhdshj", "sjdskjkddd", "tewed");
+        Assert.assertEquals((String) "tewed", maxString);
     }
 }

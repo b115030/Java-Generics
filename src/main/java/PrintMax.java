@@ -24,4 +24,14 @@ public class PrintMax {
         return maxNumber;
     }
 
+    //Use case 3
+    public String printMaxString(String firstString, String secondString, String thirdString) {
+        String maxString = firstString;
+        if (maxString.compareTo(secondString) < 0)
+            maxString = secondString;
+        if (maxString.compareTo(thirdString) < 0)
+            maxString = thirdString;
+        return maxString;
+    }
+
 }
