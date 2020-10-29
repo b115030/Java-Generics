@@ -76,14 +76,14 @@ public class PrintMaxTest {
     @Test
     public void givenMoreThanThreeIntegers_ShouldReturnMaxInteger() {
         Integer maxElement = PrintMax.testMaximum(25, 26, 150, 655, 879, 15, 236, 17);
-        Assert.assertEquals((Integer) 150, maxElement);
+        Assert.assertEquals((Integer) 879, maxElement);
     }
 
     //test case 4.2 prints max Float when more than three Float passed
     @Test
     public void givenMoreThanThreeFloat_ShouldReturnMaxFloat() {
         Float maxElement = PrintMax.testMaximum(26.1256f, 26.35268f, 26.374896f, 26.58942f, 26.3655876595f, 26.455445f);
-        Assert.assertEquals((Float) 26.374896f, maxElement);
+        Assert.assertEquals((Float) 26.58942f, maxElement);
     }
 
     //test case 4.3 prints max String when more than three Strings passed

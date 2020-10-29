@@ -18,7 +18,17 @@ public class PrintMax<E extends Comparable> {
             if (maxElement.compareTo(i) < 0)
                 maxElement = i;
         }
+        printMax(maxElement, items);
         return maxElement;
+    }
+
+    public static <E> void printMax(E maxElement, E... items) {
+        System.out.println("For the following elements");
+        for (E i : items) {
+            System.out.print(i + " ");
+        }
+        System.out.println("\n Maximum is: " + maxElement);
+
     }
 
     public E testMaximum() {
