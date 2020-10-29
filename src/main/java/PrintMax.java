@@ -12,12 +12,12 @@ public class PrintMax<E extends Comparable> {
         return true;
     }
 
-    public static <E extends Comparable> E testMaximum(E firstElement, E secondElement, E thirdElement) {
-        E maxElement = firstElement;
-        if (maxElement.compareTo(secondElement) < 0)
-            maxElement = secondElement;
-        if (maxElement.compareTo(thirdElement) < 0)
-            maxElement = thirdElement;
+    public static <E extends Comparable> E testMaximum(E... items) {
+        E maxElement = items[0];
+        for (E i : items) {
+            if (maxElement.compareTo(i) < 0)
+                maxElement = i;
+        }
         return maxElement;
     }
 
